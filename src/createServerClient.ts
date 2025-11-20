@@ -170,7 +170,7 @@ export function createServerClient<
       autoRefreshToken: false,
       detectSessionInUrl: false,
       persistSession: true,
-      storage,
+      storage: options?.auth?.storage ?? storage,
       ...(options?.cookies &&
       "encode" in options.cookies &&
       options.cookies.encode === "tokens-only"

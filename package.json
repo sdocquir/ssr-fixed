@@ -1,5 +1,5 @@
 {
-  "name": "@supabase/ssr",
+  "name": "ssr-supabase-storage-fix",
   "version": "0.0.0",
   "description": "Use the Supabase JavaScript library in popular server-side rendering (SSR) frameworks.",
   "main": "dist/main/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/supabase/ssr.git"
+    "url": "git+https://github.com/sdocquir/ssr-fixed.git"
   },
   "keywords": [
     "Supabase",
@@ -25,12 +25,8 @@
     "SvelteKit",
     "Postgres"
   ],
-  "author": "Supabase, Inc.",
+  "author": "Selim Docquir",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/supabase/ssr/issues"
-  },
-  "homepage": "https://github.com/supabase/ssr#readme",
   "devDependencies": {
     "@eslint/js": "^9.3.0",
     "@supabase/supabase-js": "^2.76.1",
