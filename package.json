@@ -1,6 +1,6 @@
 {
-  "name": "ssr-supabase-storage-fix",
-  "version": "0.0.0",
+  "name": "supabase-ssr-cookie-fix",
+  "version": "0.0.1",
   "description": "Use the Supabase JavaScript library in popular server-side rendering (SSR) frameworks.",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",

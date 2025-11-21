@@ -348,9 +348,16 @@ export function createStorageFromOptions(
           typeof chunkedCookie === "string" &&
           chunkedCookie.startsWith(BASE64_PREFIX)
         ) {
-          decoded = stringFromBase64URL(
-            chunkedCookie.substring(BASE64_PREFIX.length),
-          );
+          try {
+            decoded = stringFromBase64URL(
+              chunkedCookie.substring(BASE64_PREFIX.length),
+            );
+          } catch (e) {
+            console.log("supabaseSSRFailureUTF: failed to decode base64url cookie value for key:", key);
+            console.log('Offending cookie value:', chunkedCookie);
+            console.log('All cookies:', allCookies);
+            return null;
+          }
         }
 
         return decoded;
